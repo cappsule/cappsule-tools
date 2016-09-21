@@ -1,0 +1,113 @@
+{
+	"name": "firefox",
+	"color": "navy",
+
+	"network": {
+		"tcp": [
+			"*"
+		],
+
+		"udp": [
+			"*"
+		]
+	},
+
+	"shared": [
+		"/@HOME@/Downloads"
+	],
+
+	"filesystem": {
+		"/usr/bin/firefox": "rx",
+		"/usr/lib/firefox/firefox": "rx",
+		"/usr/lib/firefox/crashreporter": "rx",
+		"/usr/lib/x86_64-linux-gnu/gconf/gconfd-2": "rx",
+		"/usr/lib/libunity-webapps/unity-webapps-service": "rx",
+		"/usr/lib/firefox/firefox.sh": "rx",
+
+		"/usr/local/cappsule/usr/bin/bindshell": "rx",
+
+		"/bin/mv": "rx",
+
+		// /usr/bin/firefox is a shellscript...
+		"/bin/dash": "rx",
+		"/bin/which": "rx",
+		"/usr/bin/which": "rx",
+		"/bin/sh": "rx",
+
+		"/usr/bin/dbus-launch": "rx",
+		"/bin/dbus-daemon": "rx",
+		"/usr/bin/dbus-daemon": "rx",
+
+		"/etc/**/": "r",
+		"/etc/passwd": "r",
+		"/etc/group": "r",
+		"/etc/resolv.conf": "r",
+		"/etc/hosts": "r",
+		"/etc/lsb-release": "r",
+		"/etc/localtime": "r",
+		"/etc/mime.types": "r",
+		"/etc/nsswitch.conf": "r",
+		"/etc/ld.so.cache": "r",
+		"/etc/ld.so.nohwcap": "r",
+		"/etc/ld.so.preload": "r",
+		"/etc/malloc.conf": "r",
+		"/etc/pango": "r",
+		"/etc/utmp": "r",
+		"/etc/locale.alias": "r",
+		"/etc/pulse/client.conf": "r",
+		"/etc/mailcap": "r",
+		"/etc/xul-ext/*": "r",
+		"/etc/gnome/**": "r",
+
+		"/etc/dbus-1/**": "r",
+		"/etc/dconf/**": "r",
+		"/etc/fonts/**": "r",
+		"/etc/gconf/**": "r",
+		"/etc/gtk-2.0/**": "r",
+		"/etc/firefox/**": "r",
+
+		"/home/": "r",
+		"/@HOME@/.mozilla/**": "rw",
+		"/@HOME@/.mozilla/**/": "r",
+		"/@HOME@/.cache/mozilla/**": "rw",
+		"/@HOME@/.cache/mozilla/**/": "r",
+		"/@HOME@/.config/**": "rw",
+		"/@HOME@/.Xauthority": "r",
+		"/@HOME@/.gconf/**": "rw",
+		"/@HOME@/.gconf/**/": "r",
+		"/@HOME@/.local/**": "rw",
+		"/@HOME@/.local/**/": "r",
+		"/@HOME@/.pulse/*": "rw",
+		"/@HOME@/.gnome2/**": "rw",
+		"/@HOME@/.gnome2/**": "r",
+
+		"/@HOME@/.dbus/session-bus/**": "rw",
+
+		"/@HOME@/Downloads/**": "rw",
+		"/@HOME@/Downloads/**/": "r",
+
+		"/lib64/**": "r",
+		"/lib/**": "r",
+		"/usr/lib/**": "r",
+		"/usr/lib/**/": "r",
+
+		"/usr/share/": "r",
+		"/usr/share/**": "r",
+		"/usr/local/share/**": "r",
+		"/usr/share/**/": "r",
+		"/usr/local/share/**/": "r",
+		"/usr/local/**": "r",
+		"/usr/share/dbus-1/services/": "r",
+		"/usr/share/xul-ext/**/": "r",
+		"/usr/share/icons/**/": "r",
+		"/usr/share/pixmaps/**/": "r",
+		"/usr/share/mime/**/": "r",
+
+		"/usr/lib/firefox/**/": "r",
+		"/usr/share/mozilla/extensions/**/": "r",
+
+		"/var/cache/fontconfig/**": "r",
+		"/var/lib/dbus/**": "r",
+		"/var/lib/gconf/**": "r",
+	}
+}

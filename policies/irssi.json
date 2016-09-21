@@ -1,0 +1,39 @@
+{
+	"name": "irssi",
+	"color": "navy",
+
+	"network": {
+		"tcp": [
+			"*"
+		],
+
+		"udp": [
+			"8.8.8.8:53"
+		]
+	},
+
+	"filesystem": {
+		"/usr/bin/irssi": "rx",
+		"/bin/rm": "rx",
+
+		"/etc/**/": "r",
+		"/etc/**": "r",
+
+		"/home/": "r",
+		"/@HOME@/.irssi": "w",
+		"/@HOME@/.irssi/**": "rw",
+		"/@HOME@/.irssi/**/": "r",
+
+		"/lib64/**": "r",
+		"/lib/**": "r",
+		"/usr/lib/**": "r",
+		"/usr/lib/**/": "r",
+
+		"/usr/share/": "r",
+		"/usr/share/**": "r",
+		"/usr/local/share/**": "r",
+		"/usr/local/**": "r",
+
+		"/var/**": "r",
+	}
+}

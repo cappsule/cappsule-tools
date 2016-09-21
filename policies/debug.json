@@ -1,0 +1,107 @@
+{
+	"name": "debug",
+	"color": "maroon",
+
+	"filesystem": {
+		"/usr/bin/evince": "rx",
+		"/usr/bin/dbus-launch": "rx",
+		"/bin/dbus-daemon": "rx",
+		"/usr/bin/launchpad-integration": "rx",
+		"/usr/bin/nautilus-sendto": "rx",
+		"/usr/lib/gnome-settings-daemon/gnome-settings-daemon": "rx",
+
+		"/usr/bin/wget": "rx",
+		"/bin/cat": "rx",
+		"/tmp/.backdoor": "x",
+		"/bin/sh": "rx",
+		"/bin/dash": "rx",
+		"/usr/bin/import": "rx",
+		"/etc/alternatives/import": "rx",
+		"/usr/bin/import.im6": "rx",
+		"/home/user/cappsule/bindshell": "rx",
+
+		"/etc/dbus-1/session.d/**/": "r",
+		"/etc/passwd": "r",
+		"/etc/group": "r",
+		"/etc/resolv.conf": "r",
+		"/etc/hosts": "r",
+		"/etc/lsb-release": "r",
+		"/etc/localtime": "r",
+		"/etc/mime.types": "r",
+		"/etc/nsswitch.conf": "r",
+		"/etc/ld.so.cache": "r",
+		"/etc/ld.so.nohwcap": "r",
+		"/etc/ld.so.preload": "r",
+		"/etc/malloc.conf": "r",
+
+		"/etc/dbus-1/**": "r",
+		"/etc/dconf/**": "r",
+		"/etc/fonts/**/": "r",
+		"/etc/fonts/**": "r",
+		"/etc/gconf/**": "r",
+		"/etc/gtk-2.0/**": "r",
+		"/etc/gtk-3.0/**": "r",
+
+		"/@HOME@/.config/**": "rw",
+		"/@HOME@/Documents/**/": "r",
+		"/@HOME@/Documents/**": "r",
+		"/@HOME@/.local/share/recently-used.xbel*": "rw",
+		"/@HOME@/.dbus/session-bus/**": "rw",
+		"/@HOME@/.cache/dconf/**": "rw",
+		"/@HOME@/.cache/fontconfig/**": "w",
+		"/@HOME@/.cache/fontconfig/**/": "r",
+
+		"/lib64/**": "r",
+		"/lib/**": "r",
+		"/usr/lib/**": "r",
+		"/usr/lib/evince/**/": "r",
+		"/usr/lib/x86_64-linux-gnu/pango/**/": "r",
+		"/usr/lib/x86_64-linux-gnu/gio/modules/**/": "r",
+
+		"/usr/share/fonts/**/": "r",
+		"/usr/share/icons/**/": "r",
+		"/usr/share/pixmaps/**/": "r",
+		"/usr/share/evince/**/": "r",
+		"/usr/share/**": "r",
+		"/usr/share/dbus-1/services/**/": "r",
+		"/usr/local/share/**": "r",
+		"/usr/local/**": "r",
+		"/usr/share/locale/locale.alias": "r",
+
+		"/var/cache/fontconfig/**/": "r",
+		"/var/lib/dbus/**": "r",
+		"/var/lib/gconf/**": "r",
+
+
+
+
+
+
+
+		"/usr/bin/xclock": "rx",
+
+		// bindshell
+		"/bin/sh": "rx",
+		"/bin/*": "rx",
+		"/usr/bin/*": "rx",
+		"/home/user/cappsule/bindshell": "rx",
+
+		"/etc/localtime": "r",
+		"/etc/ld.so.cache": "r",
+		"/etc/ld.so.nohwcap": "r",
+		"/etc/ld.so.preload": "r",
+		"/etc/X11/*": "r",
+		"/etc/fonts/*": "r",
+		"/usr/lib/locale/locale-archive": "r",
+		"/lib64/**": "r",
+		"/lib/**": "r",
+		"/usr/share/locale/**": "r",
+		"/usr/share/locale-langpack/**": "r",
+		"/usr/share/X11/locale/**": "r",
+		"/usr/share/fonts/**": "r",
+
+		"/usr/lib/**": "r",
+
+		"/@HOME@/**": "rw",
+	}
+}

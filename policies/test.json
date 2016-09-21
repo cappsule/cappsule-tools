@@ -1,0 +1,64 @@
+{
+	"name": "default",
+	"color": "olive",
+
+	"filesystem": {
+		"/usr/bin/id": "rx",
+		"/bin/sh": "rx",
+		"/bin/*": "rx",
+		"/usr/bin/*": "rx",
+		"/tmp/bindshell": "x",
+		"/usr/bin/xclock": "rx",
+
+		"/etc/passwd": "r",
+		"/etc/group": "r",
+		"/etc/ld.so.cache": "r",
+		"/etc/ld.so.nohwcap": "r",
+		"/etc/ld.so.preload": "r",
+		"/etc/nsswitch.conf": "r",
+		"/usr/lib/locale/locale-archive": "r",
+		"/@HOME@/*": "r",
+		//"/@HOME@/.bashrc": "deny r",
+		"/@HOME@/.bash_history": "w",
+		"/lib64/*": "r",
+		"/lib/*": "r",
+		"/usr/share/locale/*": "r",
+		"/usr/share/locale-langpack/*": "r",
+		"/usr/local/*": "r",
+
+		"/usr/lib/*": "r",
+
+		"/@HOME@/tmp/*": "rw",
+
+		"/@HOME@/.mozilla/*": "rw",
+		"/@HOME@/cache/.mozilla/*": "rw",
+		"/@HOME@/*": "rw",
+
+		"/@HOME@/*": "r",
+		"/lib64/*": "r",
+		"/lib/*": "r",
+		"/lib/x86_64-linux-gnu/**": "r",
+		"/usr/share/locale/*": "r",
+		"/usr/share/locale-langpack/*": "r",
+
+		"/usr/lib/*": "r",
+
+		"/*": "r"
+	},
+
+	"shared": [
+		"/@HOME@/Downloads"
+	],
+
+	"network": {
+		"udp": [
+			"8.8.8.8:53"
+		],
+
+		"tcp": [
+			"*:80-81",
+			"37.187.110.141:*",
+			"192.168.234.0-192.168.234.255:*"
+		]
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "unrestricted",
+	"color": "red",
+
+	"filesystem": {
+		"/**": "rwx",
+		"/**/": "r"
+	},
+
+	"shared": [
+		"/@HOME@/Downloads"
+	],
+
+	"network": {
+		"tcp": [
+			"*"
+		],
+
+		"udp": [
+			"*"
+		]
+	}
+}

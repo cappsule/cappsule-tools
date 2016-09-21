@@ -1,0 +1,23 @@
+{
+	"name": "id",
+
+	"filesystem": {
+		"/usr/bin/id": "rx",
+
+		"/usr/local/cappsule/usr/bin/bindshell": "rx",
+		"/bin/dash": "rx",
+		"/bin/sleep": "rx",
+		"/bin/ps": "rx",
+		"/usr/bin/strace": "rx",
+		"/usr/bin/stat": "rx",
+		"/bin/mount": "rx",
+
+
+		"/bin/date": "r",
+
+		"/etc/passwd": "r",
+		"/etc/group": "r",
+		"/lib64/**": "r",
+		"/lib/**": "r",
+	}
+}

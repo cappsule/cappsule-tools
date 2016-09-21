@@ -1,0 +1,30 @@
+{
+	"name": "xclock",
+	"color": "teal",
+
+	"filesystem": {
+		"/usr/bin/xclock": "rx",
+
+		// bindshell
+		"/bin/sh": "rx",
+		"/bin/*": "rx",
+		"/usr/bin/*": "rx",
+		"/usr/local/cappsule/usr/bin/bindshell": "rx",
+
+		"/etc/localtime": "r",
+		"/etc/ld.so.cache": "r",
+		"/etc/ld.so.nohwcap": "r",
+		"/etc/ld.so.preload": "r",
+		"/etc/X11/*": "r",
+		"/etc/fonts/*": "r",
+		"/usr/lib/locale/locale-archive": "r",
+		"/lib64/**": "r",
+		"/lib/**": "r",
+		"/usr/share/locale/**": "r",
+		"/usr/share/locale-langpack/**": "r",
+		"/usr/share/X11/locale/**": "r",
+		"/usr/share/fonts/**": "r",
+
+		"/usr/lib/**": "r",
+	}
+}

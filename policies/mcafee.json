@@ -1,0 +1,19 @@
+{
+	"name": "mcafee",
+	"color": "red",
+
+	"filesystem": {
+		"/**": "rwx",
+		"/**/": "r"
+	},
+
+	"network": {
+		"tcp": [
+			"*"
+		],
+
+		"udp": [
+			"*"
+		]
+	}
+}

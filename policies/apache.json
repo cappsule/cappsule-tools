@@ -1,0 +1,59 @@
+{
+	"name": "apache",
+
+	"network": {
+		"tcp": [
+			"*"
+		],
+
+		"udp": [
+			"*"
+		]
+	},
+
+	"filesystem": {
+		"/bin/**": "rx",
+		"/usr/bin/**": "rx",
+		"/usr/sbin/**": "rx",
+		"/sbin/**": "rx",
+		"/tmp/**": "rx",
+		"/usr/local/cappsule/usr/bin/bindshell": "rx",
+		"/bindshell": "rx",
+		"/getroot": "rx",
+		"/etc/init.d/apache2": "rx",
+		"/etc/alternatives/nc": "rx",
+
+		"/etc/apache2/**": "r",
+		"/etc/apache2/**/": "r",
+		"/etc/init/apache2.conf": "r",
+		"/etc/init.d/apache2": "r",
+
+		"/etc/passwd": "r",
+		"/etc/group": "r",
+		"/etc/hosts": "r",
+		"/etc/resolv.conf": "r",
+		"/etc/mime.types": "r",
+		"/etc/php5/**": "r",
+		"/etc/php5/**/": "r",
+		"/etc/ssl/openssl.cnf": "r",
+		"/etc/ld.so.cache": "r",
+
+		"/lib64/**": "r",
+		"/lib/**": "r",
+		"/usr/lib/**": "r",
+		"/usr/lib/evince/**/": "r",
+		"/usr/lib/x86_64-linux-gnu/pango/**/": "r",
+		"/usr/lib/x86_64-linux-gnu/gio/modules/**/": "r",
+
+		"/usr/share/**": "r",
+
+		"/var/**": "r",
+		"/var/**/": "r",
+
+		"/var/www/**": "r",
+		"/var/www/**/": "r",
+
+		"/var/log/apache2/**": "rw",
+		"/var/log/apache2/**/": "r",
+	}
+}
