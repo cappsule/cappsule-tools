@@ -116,12 +116,12 @@ class Deb:
         tmpfiles = []
         files = {
             'lib/systemd/system/cappsule.service': (SYSTEMD_CONF, 0644),
-            'usr/lib/xorg/Xorg.wrap': (XORG_WRAP, 0755),
         }
 
         # don't include lightdm configuration file in server release
         if self._config_name != 'server':
             files['etc/lightdm/lightdm.conf.d/cappsule.conf'] = (LIGHTDM_CONF, 0644)
+            files['usr/lib/xorg/Xorg.wrap'] = (XORG_WRAP, 0755)
 
         for dst, (data, mode) in files.iteritems():
             fd, path = tempfile.mkstemp()
